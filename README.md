@@ -28,7 +28,31 @@ queries database to find the 8 languages which are most often an official langua
 creates plot of  sq km vs sq mi and plots regression line and a bar plot of top 8 languages vs number of 
 countries where they are an official language. 
 
+WikiScrape: Folder containing Python scripts to download html tables from Wikipedia
+and extract data from the tables.
+
+WikiScrape/raw_html: Empty folder. Will contain files obtained by running WikiTables.py
+
+
+WikiScrape/extract.py: Contains methods to clean up and extract data obtained
+from WikiTables.py; imported into TableParse.py 
+
+WikiScrape/WikiTables.py: Downloads country info table using links for each country 
+found in https://en.wikipedia.org/wiki/List_of_sovereign_states and saves the resulting 
+html as a file with the name of the country in folder raw_html.
+
+WikiScrape/TableParse.py: Parses html files in raw_html to obtain country data.
+creates a list of dictionaries where each dictionary contains a country's data
+and saves the list to Countrydata.pickle in main directory
+
+
+
 ### Executing code
+move to WikiScrape directory
+Execute WikiScrape/WikiTables.py
+Execute WikiScrape/TableParse.py
+move to the main project directory
+Execute CountryStats.py 
 
 
 
