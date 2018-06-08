@@ -1,4 +1,6 @@
-#H1 Code to create and query a database containing country data
+Code to create and query a database containing country data
+==============================================================
+
 The code in this repository is divided into three parts:
 1. download info table html from the Wikipedia pages of countries found at
 https://en.wikipedia.org/wiki/List_of_sovereign_states
