@@ -1,19 +1,19 @@
 Code to create and query a database containing country data
 ==============================================================
 
-The code in this repository is divided into three parts:
+The code in this repository is divided into three parts:  
 1. downloading info table html from the Wikipedia pages of countries found at
 https://en.wikipedia.org/wiki/List_of_sovereign_states
 2. extracting country data from the downloaded html tables and saving it
-into a pickle file as a list of dictionaries where each dictionary corresponds to
-information about one country
+into a pickle file as a list of dictionaries  
+where each dictionary corresponds to information about one country
 3. Using a dbConnection and dbCursor class to create, modify, and query a database
 using the pickle file
 
 ### Requirements
-This code is run using Python 2.7.12 and requires installing the following modules:
-BeautifulSoup 4 (tested using version 4.4.1)
-Matplotlib (tested using version 2.0.2)
+This code is run using Python 2.7.12 and requires installing the following modules:  
+BeautifulSoup 4 (tested using version 4.4.1)  
+Matplotlib (tested using version 2.0.2)  
 
 ### Directory Description
 CountryDatabase.py: contains the cdbConnection class and cdbCursor class which inherit
@@ -48,10 +48,10 @@ and saves the list to Countrydata.pickle in main directory
 
 
 ### Executing code
-move to WikiScrape directory
-Execute WikiScrape/WikiTables.py
-Execute WikiScrape/TableParse.py
-move to the main project directory
+move to WikiScrape directory  
+Execute WikiScrape/WikiTables.py  
+Execute WikiScrape/TableParse.py  
+move to the main project directory  
 Execute CountryStats.py 
 
 
